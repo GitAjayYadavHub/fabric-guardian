@@ -23,9 +23,13 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #2c3e50;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
 }
 
 .nav-links {
@@ -120,13 +124,27 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    height: 100%;
 }
 
-.hero-right img {
-    max-width: 100%;
-    height: auto;
-    max-height: 65vh;
+.hero-image {
+    position: absolute;
     object-fit: contain;
+}
+
+.home-img {
+    max-width: 85%;
+    max-height: 60vh;
+    z-index: 1;
+}
+
+.clothes-img {
+    max-width: 40%;
+    max-height: 35vh;
+    z-index: 2;
+    top: 10%;
+    right: 5%;
 }
 
 /* Responsive Design */
@@ -163,8 +181,21 @@ nav {
         gap: 1.5rem;
     }
 
-    .hero-right img {
-        max-height: 40vh;
+    .hero-right {
+        position: relative;
+        height: 50vh;
+    }
+
+    .home-img {
+        max-width: 90%;
+        max-height: 45vh;
+    }
+
+    .clothes-img {
+        max-width: 45%;
+        max-height: 30vh;
+        top: 5%;
+        right: 2%;
     }
 }
 
@@ -176,8 +207,8 @@ nav {
         height: auto;
     }
 
-    .logo {
-        font-size: 1.3rem;
+    .logo img {
+        height: 50px;
     }
 
     .nav-links {
@@ -207,7 +238,20 @@ nav {
         font-size: 0.95rem;
     }
 
-    .hero-right img {
+    .hero-right {
+        height: 40vh;
+        margin-top: 1rem;
+    }
+
+    .home-img {
+        max-width: 100%;
         max-height: 35vh;
+    }
+
+    .clothes-img {
+        max-width: 50%;
+        max-height: 25vh;
+        top: 0;
+        right: 0;
     }
 }
