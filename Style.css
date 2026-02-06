@@ -232,7 +232,7 @@ nav {
     }
 
     .hero-section {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
         padding: 2rem 5% 1rem;
         height: auto;
